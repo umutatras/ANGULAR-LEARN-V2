@@ -1,0 +1,58 @@
+<!-- <p>reactive-form works!</p>
+<form [formGroup]="addform">
+  <div>
+    email
+    <input formControlName="email" type="text">
+  </div>
+  <div>
+    password
+    <input formControlName="password" type="text">
+  </div>
+  <button [disabled]="!addform.valid" (click)="add()">save</button>
+</form> -->
+
+<form action="" [formGroup]="addForm">
+  <div>
+    personel adı
+    <input formControlName="name" type="text" />
+  </div>
+  <div>
+    bölümü
+    <select formControlName="profession">
+      <option>Muhasebe</option>
+      <option>Finans</option>
+      <option>yazılım</option>
+    </select>
+  </div>
+  <div>
+    işe giriş tarihi
+    <input formControlName="startingDate"/>
+  </div>
+  <div>
+    <button (click)="save()">Kaydet</button>
+  </div>
+</form>
+<hr />
+<table>
+  <thead>
+    <th>#</th>
+    <th>Personel Adı</th>
+    <th>Bölümü</th>
+    <th>İşe Giriş tarihi</th>
+    <th>İşlemler</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of employess">
+    <td>
+      {{item.name}}
+    </td></tr>
+  </tbody>
+</table>
+
+<form #loginForm="ngForm" action="">
+  <div>
+    email
+    <input name="email" ngModel #email type="text">
+  </div>
+  <button (click)="login(loginForm)"></button>
+</form>

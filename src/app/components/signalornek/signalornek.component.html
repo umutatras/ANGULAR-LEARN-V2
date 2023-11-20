@@ -1,0 +1,11 @@
+<h1>{{count()}}</h1>
+<br>
+<button (click)="increment()"></button>
+<button (click)="decrement()"></button>
+
+<hr>
+<ul>
+  <li *ngFor="let item of results()">{{item}}</li>
+</ul>
+
+<ngx-spinner bdColor="rgba(0,0,0,0.8)" size="large" color="#f40505" type="line-scale-pulse-out-rapid" [fullScreen]="true"><p style="color:white">Yükseliyor...</p></ngx-spinner>

@@ -1,0 +1,9 @@
+<p appRenklendir>directive works!</p>
+
+<a appMyRouting="/c1"></a>
+<form >
+  <input #name [appValid]="name.validity.valid" minlength="3" maxlength="10" class="form-control" required type="text">
+  <div class="invalid-feedback">
+    zorunlu alan!!
+  </div>
+</form>

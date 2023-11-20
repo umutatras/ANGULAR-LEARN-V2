@@ -1,0 +1,10 @@
+<p>todoapp works!</p>
+
+<h1>ınput output ornek</h1>
+
+<input [(ngModel)]="work" type="text" />
+<button (click)="add()">Kaydet</button>
+
+<ul>
+  <li *ngFor="let item of todos">{{ item }}</li>
+</ul>

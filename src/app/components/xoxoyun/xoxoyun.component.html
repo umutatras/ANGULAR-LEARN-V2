@@ -1,0 +1,17 @@
+<h1>xox oyunu</h1>
+
+
+<h2 class="alert alert-warning text-center">
+{{message}}
+</h2>
+<button (click)="newGame()" class="btn btn-rpimary w-100">
+  yeni oyun
+</button>
+<div class="row mt-2">
+  <div (click)="setMark(index)" style="border: 1px solid #ccc; height: 150px; cursor: pointer;" class="col-md-4 text-center text-warning" *ngFor="let game of games let index=index">
+    <span class="text-center" style="font-size: 80px;">{{game}}</span>
+  </div>
+</div>
+<hr>
+<button (click)="returnSelectMove(i)" *ngFor="let item of moves let i=index" class="btn btn-primary mx-1 mt-1">{{i+1}}. hamle</button>
+

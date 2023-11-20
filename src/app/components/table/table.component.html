@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let item of heads">{{ item }}</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <ng-content #name></ng-content>
+    </tr>
+  </tbody>
+</table>
+

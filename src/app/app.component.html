@@ -1,0 +1,18 @@
+<app-statemanagement
+  name="name"
+  (changeNameEvent)="changeName($event)"
+></app-statemanagement>
+<h1>{{ "App.Helo" | translate }}</h1>
+<app-mycountcomponent></app-mycountcomponent>
+<app-todoapp></app-todoapp>
+<router-outlet></router-outlet>
+
+<select #langSelect (change)="translate.use(langSelect.value)">
+  <option
+    *ngFor="let lang of translate.getLangs()"
+    [value]="lang"
+    [selected]="lang === translate.currentLang"
+  >
+    {{ lang }}
+  </option>
+</select>

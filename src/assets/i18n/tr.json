@@ -1,0 +1,13 @@
+{
+  "App":{
+    "Hello":"Merhaba",
+    "LoginPage":"Giriş Page",
+    "HomePage":"anasayfa Page"
+  },
+  "Home":{
+    "HomeWorks":"Anasayfa Works"
+  },
+  "Login":{
+    "LoginWorks":"Giriş Works!"
+  }
+}

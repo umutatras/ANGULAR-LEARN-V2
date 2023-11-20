@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createAction } from \"@ngrx/store\";\nexport const increment = createAction(\"[increment]\");\nexport const decrement = createAction(\"[decrement]\");\nexport const reset = createAction(\"[reset]\");","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

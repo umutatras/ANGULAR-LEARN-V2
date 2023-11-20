@@ -1,0 +1,19 @@
+<h1>if blogları</h1>
+
+<button *ngIf="isActive == false" (click)="changeActiveStatus()">aktşf</button
+><br />
+<button *ngIf="isActive == true;else check" (click)="changeActiveStatus()">pasif</button>
+
+<ng-template #check>
+  <button  (click)="changeActiveStatus()">pasif</button>
+
+</ng-template>
+
+<input type="text" [(ngModel)]="meyve">
+<button (click)=" addMeyve()">meyveyi listeye ekle</button>
+
+<ul>
+  <li *ngFor="let meyve of meyveler let i=index">
+    {{i}} {{meyve}}
+  </li>
+</ul>
